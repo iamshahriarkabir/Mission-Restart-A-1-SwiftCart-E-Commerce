@@ -178,14 +178,14 @@ async function openModal(id) {
         const product = await res.json();
 
         modalContent.innerHTML = `
-            <div class="flex flex-col md:flex-row gap-8 p-8 h-full">
-                <div class="w-full md:w-1/2 flex justify-center items-center bg-gray-50 rounded-xl p-6">
-                    <img src="${product.image}" class="max-h-80 object-contain mix-blend-multiply" />
+            <div class="flex flex-col md:flex-row gap-6 md:gap-8 p-6 md:p-8 h-full">
+                <div class="w-full md:w-1/2 flex justify-center items-center bg-gray-50 rounded-xl p-6 relative">
+                    <img src="${product.image}" class="max-h-64 md:max-h-80 object-contain mix-blend-multiply" />
                 </div>
                 <div class="w-full md:w-1/2 flex flex-col justify-center">
-                    <div class="badge bg-violet-100 text-primary mb-4 capitalize">${product.category}</div>
-                    <h3 class="text-3xl font-bold mb-4 text-gray-900">${product.title}</h3>
-                    <p class="text-gray-500 mb-6 leading-relaxed">${product.description}</p>
+                    <div class="badge bg-violet-100 text-primary mb-3 capitalize px-3 py-1">${product.category}</div>
+                    <h3 class="text-2xl md:text-3xl font-bold mb-3 text-gray-900 leading-tight">${product.title}</h3>
+                    <p class="text-gray-500 mb-6 leading-relaxed text-sm md:text-base max-h-40 overflow-y-auto scrollbar-thin">${product.description}</p>
                     <div class="flex items-center gap-4 mb-8">
                         <span class="text-4xl font-bold text-primary">$${product.price}</span>
                         <div class="flex items-center gap-1 text-yellow-500 font-bold bg-yellow-50 px-3 py-1 rounded-full">
