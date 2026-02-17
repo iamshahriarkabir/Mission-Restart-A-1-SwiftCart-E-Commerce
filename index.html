@@ -33,7 +33,52 @@
 
 </head>
 <body class="bg-white text-gray-800">
+<!-- ✅ Navbar  -->
+    <nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="container mx-auto px-4 md:px-12">
+            <div class="navbar flex justify-between items-center min-h-[4rem] px-0">
+                
+                <!-- 1. Logo (Left Side) -->
+                <div class="navbar-start w-auto">
+                    <a href="index.html" class="text-2xl font-bold text-primary tracking-tight">SwiftCart</a>
+                </div>
+                
+                <!-- 2. Desktop Menu (Center) -->
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 gap-8 text-sm font-medium text-gray-600">
+                        <li><a href="index.html" class="hover:text-primary transition">Home</a></li>
+                        <li><a href="products.html" class="hover:text-primary transition">Products</a></li>
+                        <li><a href="about.html" class="hover:text-primary transition">About</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- 3. Cart & Mobile Menu (Right Side) -->
+                <div class="flex gap-3 ">
+                    
+                    <!-- Cart Icon -->
+                    <div onclick="openCartModal()" class="relative cursor-pointer hover:text-primary transition p-2">
+                        <span id="cart-count" class="absolute -top-1 -right-1 bg-primary text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full">0</span> 
+                        <i data-feather="shopping-cart" class="w-5 h-5 text-gray-700"></i>
+                    </div>
 
+                    <!-- Mobile Hamburger Menu (Right Side) -->
+                    <div class="dropdown dropdown-end lg:hidden">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle pl-0">
+                            <i data-feather="menu" class="w-6 h-6 text-gray-700"></i>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-lg bg-white rounded-box w-32 border border-gray-100">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
 
 
     <!-- Script Link -->
