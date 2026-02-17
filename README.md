@@ -2,8 +2,8 @@
 
 SwiftCart is a responsive e-commerce web application built using Vanilla JavaScript, Tailwind CSS, and DaisyUI. It fetches real-time product data from the FakeStoreAPI and offers a seamless shopping experience with features like category filtering, a dynamic shopping cart, and product details.
 
-🔗 **Live Link:** [YOUR_DEPLOYED_URL_HERE]  
-*(Replace this link after deploying to Netlify)*
+🔗 **Live Link:** [https://swiftcart-z4code.netlify.app]  
+
 
 ---
 
@@ -25,10 +25,6 @@ SwiftCart is a responsive e-commerce web application built using Vanilla JavaScr
 - **Tools:** VS Code, Git, GitHub
 
 ---
-
-**Live Link:** [https://swiftcart-z4code.netlify.app]
-
-
 
 
 ## ❓ JavaScript Basic Concepts Questions & Answers 
